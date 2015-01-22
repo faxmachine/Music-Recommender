@@ -1,5 +1,5 @@
 # this function is what calculates the account that has the most similar rating 
-# to the account logged in.
+# to the account logged in
 from file_manip import *
 import constants as c
 
