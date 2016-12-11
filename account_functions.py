@@ -1,8 +1,6 @@
 def get_songs(file_name):
 	# open the account data file
 	account = open('data/' + file_name + '.dat', 'r')
-
-	# delcare variables
 	song = 0
 	song_list = []
 

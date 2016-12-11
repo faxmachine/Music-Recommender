@@ -3,8 +3,6 @@
 def get_songs(file_name):
 	# open the account data file
 	account = open('data/' + file_name + '.dat', 'r')
-
-	# delcare variables
 	song = 0
 	song_list = []
 
@@ -15,7 +13,6 @@ def get_songs(file_name):
 
 	# close the file
 	account.close()
-
 	# returns all of data in a 2d list
 	return(song_list)
 
@@ -25,9 +22,7 @@ def new_account(account_name):
 
 ########## MINK FUNCTIONS ###########
 import os 
-
 def get_filenames():
-	# constants and variables
 	data = './data'
 	file_list = []
 	i = 0
@@ -43,19 +38,15 @@ def get_filenames():
 	# remove '.dat'
 	for i in range(len(file_list)):
 		file_list[i] = file_list[i].rstrip('.dat')
-	
+
 	# returns a list of the filenames
-	
 	return(file_list)
 
 def taxicab(rating1, rating2):
 	return abs(rating1 - rating2)
 
-
-
 def get_similar_songs(account_name):
 	songs = sorted(get_songs(account_name),key = lambda pair: pair[3],reverse=True)
-
 	return songs
 
 

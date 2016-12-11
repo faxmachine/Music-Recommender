@@ -5,7 +5,6 @@ from file_manip import *
 from mink import *
 import constants as c
 
-
 def main():
     file_name = 0
     most_similar = 0
@@ -26,5 +25,4 @@ def main():
             good_input = True
         except:
             print('ERROR: Please enter a valid account')
-
 main()
